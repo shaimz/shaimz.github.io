@@ -1,10 +1,21 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/admin" v-if="status === 'Admin'">Admin</router-link>
   </div>
   <router-view/>
 </template>
+
+<script lang="ts">
+  import {Vue} from "vue-class-component";
+
+  export default class App extends Vue{
+    get status(): string{
+      return this.$store.getters.statusDefine;
+    }
+  }
+</script>
 
 <style lang="scss">
 #app {
