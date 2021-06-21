@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <button @click="setStatus(Math.floor(Math.random()*4))">Change status</button>
+    <button @click="setStatus(Math.floor(Math.random()*3))">Change status</button>
     <p>{{status}}</p>
   </div>
 </template>
