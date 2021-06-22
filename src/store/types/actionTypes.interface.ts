@@ -1,3 +1,3 @@
 export enum ActionTypes {
-    SET_STATUS = 'SET_STATUS'
+    GET_STATUS = 'GET_STATUS'
 }

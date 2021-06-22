@@ -12,14 +12,14 @@ type AugmentedActionContext = {
 } & Omit<ActionContext<State, State>, 'commit'>
 
 export interface Actions{
-    [ActionTypes.SET_STATUS](
+    [ActionTypes.GET_STATUS](
         {commit}: AugmentedActionContext,
         payload: number,
     ): Promise<number | void>
 }
 
 export const actions: ActionTree<State, State> & Actions = {
-    [ActionTypes.SET_STATUS]({commit},payload){
+    [ActionTypes.GET_STATUS]({commit},payload){
         return new Promise((resolve)=>{
             commit(MutationTypes.SET_STATUS, payload);
             resolve(payload)
