@@ -1,13 +1,21 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
         "target": "es5",
-        "noImplicitAny": false,
-        "sourceMap": false
+        "module": "esnext",
+        "strict": true,
+        "jsx": "preserve",
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators":true,
+        "sourceMap": true,
+        "noImplicitThis": false,
+        "baseUrl": "."
     },
-    "include": ["resources/js/**/*"],
+    "include": ["resources/**/*.ts","resources/**/*.vue"],
     "exclude": [
         "./out.d.ts",
-        "node_modules",
+        "node_modules"
     ]
 }
