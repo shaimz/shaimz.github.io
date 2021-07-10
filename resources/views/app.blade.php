@@ -21,7 +21,7 @@
         </style>
     </head>
     <body class="antialiased">
-        <div id="#app"><main></main></div>
+        <div id="#app"></div>
 
         <script src="{{asset('js/app.js')}}"></script>
     </body>
