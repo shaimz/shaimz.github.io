@@ -5,5 +5,9 @@
         "noImplicitAny": false,
         "sourceMap": false
     },
-    "include": ["resources/js/**/*"]
+    "include": ["resources/js/**/*"],
+    "exclude": [
+        "./out.d.ts",
+        "node_modules",
+    ]
 }
