@@ -1,5 +1,5 @@
 <template>
-    <h1>Hello {{name}}</h1>
+    <h1>Working main page</h1>
 </template>
 
 <script>
