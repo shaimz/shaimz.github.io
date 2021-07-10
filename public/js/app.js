@@ -17968,7 +17968,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({});
-app.component('main', _main_vue__WEBPACK_IMPORTED_MODULE_1__.default).mount('#app');
+app.component('app', _main_vue__WEBPACK_IMPORTED_MODULE_1__.default).mount('#app');
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
